@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 5</title>
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background: #333;
+    }
+
+    .container{
+      margin: 25px;
+      height: 750px;
+      background: #fff;
+      padding: 20px;
+    }
+
+    fieldset{
+      padding: 25px;
+      margin: 20px;
+    }
+
+    textarea{
+      max-width: 350px;
+      max-height: 160px;
+      min-width: 350px;
+      min-height: 160px;
+
+    }
+
+    button{
+      padding: 5px;
+      margin: 5px;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Superhero Form</h1>
+    <form action="process.php">
+    <fieldset> 
+
+  
+     <Legend>
+        <h3>About The Superhero</h3>
+      </Legend>
+     
+        <label for="name">Real name</label>
+        <input type="text" id="name" name="Real name" placeholder="Superhero real name">
+      
+
+     
+        <label for="hero-name">Superhero Name</label>
+        <input type="text" id="hero-name" name="Superhero Name" placeholder="Superhero alias">
+      
+
+     
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age">
+
+        <br>  <br>
+      
+
+     
+        <label for="message">About</label>
+        <textarea name="message" id="message" cols="50" rows="10"></textarea>
+
+        <br> <br>
+      
+
+     
+        <label for="myfile">Photo:</label>
+        <input type="file" id="myfile" name="filename">
+      
+
+      </fieldset> 
+
+    
+
+        <fieldset>
+
+        <legend><h3>Powers</h3></legend>
+        <!-- <label for="powers"></label> -->
+        <input type="checkbox" name="powers" value="Telekinesis" id="powers"> Telekinesis
+        <input type="checkbox" name="powers" value="Super strength or speed" id="powers"> Super strength or speed
+        <input type="checkbox" name="powers" value="Shapeshifting" id="powers"> Shapeshifting
+        <input type="checkbox" name="powers" value="Flight" id="powers"> Flight
+        <input type="checkbox" name="powers" value="Elemental Control" id="powers"> Elemental Control
+        <input type="checkbox" name="powers" value="Other" id="powers"> Other <br> <br>
+
+
+        <label for="myrange">Level of control</label>
+        <input type="range" min="1" max="100" value="20" class="slider" id="myrange">
+      
+
+     </fieldset>
+
+    
+
+      
+
+      <fieldset>
+        <legend><h3>Origin of Powers</h3></legend>
+        <input type="radio" name="origin" value="Unknown" id="origin"> Unknown
+        <input type="radio" name="origin" value="Freak lab accident" id="origin"> Freak lab accident
+        <input type="radio" name="origin" value="Chosen by an acient wise being" id="origin"> Chosen by an acient wise
+        being
+        <input type="radio" name="origin" value="The super hero is not human" id="origin"> The super hero is not human
+        <input type="radio" name="origin" value="Other" id="origin"> Other
+
+      </fieldset>
+
+      
+
+    
+
+      <button type="reset">CLEAR</button>
+      <button type="submit">SEND</button>
+
+
+
+    </form>
+
+
+  </div>
+
+
+</body>
+
+</html>
